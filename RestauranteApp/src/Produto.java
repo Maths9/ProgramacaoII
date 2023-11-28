@@ -1,3 +1,5 @@
+package RestauranteApp.src;
+
 public class Produto {
     //Atributos
     private String nomePrato;

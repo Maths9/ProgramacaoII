@@ -1,3 +1,5 @@
+package RestauranteApp.src;
+
 public class Pedido {
     //atributos
     private int quantidade;
@@ -39,7 +41,7 @@ public class Pedido {
     }
 
     public void exibirProduto(){
-        System.out.println("Produto: " + this.produto.getNomePrato());
+        System.out.println("RestauranteApp.RestauranteApp.src.RestauranteApp.Produto: " + this.produto.getNomePrato());
         System.out.println("Quantidade: " + this.quantidade);
         System.out.println("Preço Unitario: " + this.produto.getPrecoUnit());
         System.out.println("-----------------------------------------------");

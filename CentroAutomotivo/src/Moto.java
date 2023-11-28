@@ -1,9 +1,9 @@
-public class Moto extends Veiculos {
+public class Moto extends Veiculo {
     private String TipoMotor;
 
-    public Moto(String modelo, int ano, String tipoMotor) {
-        super(modelo, ano);
-        TipoMotor = tipoMotor;
+    public Moto(String modelo, int ano, String tipoMotor, String placa) {
+        super(modelo, ano,placa);
+        this.TipoMotor = tipoMotor;
     }
 
     public String getTipoMotor() {
@@ -14,9 +14,12 @@ public class Moto extends Veiculos {
         TipoMotor = tipoMotor;
     }
 
-    @Override
+
     public void exibirInfo() {
         super.exibirInfo();
         System.out.println("Tipo do Motor: " + this.TipoMotor);
+    }
+    public String toString(){
+        return super.getModelo() + "" + getTipoMotor() + " " + super.getAno();
     }
 }

@@ -1,3 +1,5 @@
+package AlunoDisciplina.src;
+
 import java.sql.SQLOutput;
 
 public class Aluno {
@@ -92,7 +94,7 @@ public class Aluno {
     }
 
     public void exibirAluno(){
-        System.out.println("Aluno: "+this.nome);
+        System.out.println("AlunoDisciplina.AlunoDisciplina.src.AlunoDisciplina.Aluno: "+this.nome);
         System.out.println("Matricula: " + this.matricula);
         double media = this.calcularMedia();
         double fin = this.calcularFinal();
