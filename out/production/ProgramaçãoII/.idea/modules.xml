@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CentroAutomotivo/CentroAutomotivo.iml" filepath="$PROJECT_DIR$/CentroAutomotivo/CentroAutomotivo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ContaBancaria/ContaBancaria.iml" filepath="$PROJECT_DIR$/ContaBancaria/ContaBancaria.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesafioEmpresa/DesafioEmpresa.iml" filepath="$PROJECT_DIR$/DesafioEmpresa/DesafioEmpresa.iml" />
       <module fileurl="file://$PROJECT_DIR$/Pessoa/Pessoa.iml" filepath="$PROJECT_DIR$/Pessoa/Pessoa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pessoa2/Pessoa2.iml" filepath="$PROJECT_DIR$/Pessoa2/Pessoa2.iml" />
       <module fileurl="file://$PROJECT_DIR$/ProgramaçãoII.iml" filepath="$PROJECT_DIR$/ProgramaçãoII.iml" />
       <module fileurl="file://$PROJECT_DIR$/questao_um/questao_um.iml" filepath="$PROJECT_DIR$/questao_um/questao_um.iml" />
     </modules>

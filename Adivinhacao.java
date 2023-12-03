@@ -12,6 +12,7 @@ public class Adivinhacao {
         while (condicao){
             vezesJogadas+= 1;
             Scanner scan = new Scanner(System.in);
+            
             System.out.println("Digite um número: ");
             numeroAleatorio = scan.nextInt();
 

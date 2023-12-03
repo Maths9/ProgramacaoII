@@ -1,22 +1,53 @@
-public class Carro extends Veiculos {
-    private int NumeroPortas;
+public class Carro extends Veiculo {
 
-    public Carro(String modelo, int ano, int numeroPortas) {
-        super(modelo, ano);
-        NumeroPortas = numeroPortas;
+    private int numPorta;
+    private String tipoVolante;
+    private String placa;
+
+    public Carro(String modelo, int ano, int numPorta, String tipoVolante, String placa){
+        super(modelo, ano,placa);
+        this.numPorta = numPorta;
+        this.tipoVolante = tipoVolante;
+        this.placa = placa;
     }
 
-    public int getNumeroPortas() {
-        return NumeroPortas;
+    public int getNumPorta() {
+        return numPorta;
     }
 
-    public void setNumeroPortas(int numeroPortas) {
-        NumeroPortas = numeroPortas;
+    public void setNumPorta(int numPorta) {
+        this.numPorta = numPorta;
+    }
+
+    public String getTipoVolante() {
+        return tipoVolante;
+    }
+
+    public void setTipoVolante(String tipoVolante) {
+        this.tipoVolante = tipoVolante;
     }
 
     @Override
-    public void exibirInfo() {
+    public void exibirInfo(){
         super.exibirInfo();
-        System.out.println("Número de portas: " + this.NumeroPortas);
+        System.out.println("Numero de Portas: " + this.numPorta);
+        System.out.println("Tipo do Volante: " + this.tipoVolante);
+        System.out.println("Número da placa: " + this.placa);
     }
+    @Override
+    public String toString(){
+        return super.getModelo() + ", " + super.getAno() + ", " +
+                this.numPorta + ", " + this.tipoVolante + ", " + this.placa;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        Carro carro = (Carro) obj;
+        if(super.getModelo().equals(carro.getModelo())) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 }
