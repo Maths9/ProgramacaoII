@@ -1,22 +1,26 @@
 public class Funcionario extends Pessoa {
-    public String setor;
+    private String SetorTrabalho;
+
     
-
-    public Funcionario(String nome, int idade, String setor) {
+    public Funcionario(String nome, int idade, String setorTrabalho) {
         super(nome, idade);
-        this.setor = setor;
+        SetorTrabalho = setorTrabalho;
     }
 
-    public void mostraDados() {
-        super.mostraDados();
-        System.out.println("Setor do funcionário: " + setor);
+    public String getSetorTrabalho() {
+        return SetorTrabalho;
     }
 
-    public String getSetor() {
-        return setor;
+    public void setSetorTrabalho(String setorTrabalho) {
+        SetorTrabalho = setorTrabalho;
     }
 
-    public void setSetor(String setor) {
-        this.setor = setor;
+    @Override
+    public void mostrarDados(){
+        super.mostrarDados();
+        System.out.println(SetorTrabalho);
+        
     }
+    
+    
 }

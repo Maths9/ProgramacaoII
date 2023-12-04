@@ -31,8 +31,5 @@ public class Programador extends  Funcionario {
         System.out.println("tipo: " + this.tipo);
     }
 
-    @Override
-    public double calcularBonus() {
-        return 0;
-    }
+
 }

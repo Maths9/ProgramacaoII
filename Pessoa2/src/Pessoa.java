@@ -1,12 +1,12 @@
 public class Pessoa {
-    private String nome;
-    private int idade;
-
+   private String nome;
+   private int idade;
 
     public Pessoa(String nome, int idade) {
-        this.nome = nome;
-        this.idade = idade;
-    }
+    this.nome = nome;
+    this.idade = idade;
+
+}
 
     public String getNome() {
         return nome;
@@ -23,10 +23,11 @@ public class Pessoa {
     public void setIdade(int idade) {
         this.idade = idade;
     }
-
-
-    public void mostraDados() {
-        System.out.println("Nome da pessoa: " + nome);
-        System.out.println("Idade da pessoa: " + idade);
+    
+    public void mostrarDados(){
+        System.out.println(nome + idade);
     }
+    
+
+   
 }

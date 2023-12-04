@@ -30,10 +30,7 @@ public class Gerente extends Funcionario {
         System.out.println("Quantidade de Funcionários: " + this.quantFuncionarios);
 
     }
-    @Override
-    public double calcularBonus() {
-        return 0;
-    }
+    
 
 
 }
