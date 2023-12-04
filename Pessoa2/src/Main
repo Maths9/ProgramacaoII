@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+        // Criando instâncias de <link>Aluno</link> e <link>Funcionário</link>
+        Aluno aluno1 = new Aluno ("João", 20, "Engenharia");
+        Funcionario funcionario1 = new Funcionario  ("Maria", 30, "RH");
+
+        // Nome a ser pesquisado
+        String nomePesquisado = "João";
+
+        // Verificando se o nome pertence a um <link>Aluno</link>, <link>Funcionário</link> ou ambos
+        if (nomePesquisado.equals(aluno1.nome) && nomePesquisado.equals(funcionario1.nome)) {
+            System.out.println("O nome pertence tanto a um" + Aluno +"quanto a um"+ Funcionario);
+        } else if (nomePesquisado.equals(aluno1.nome)) {
+            System.out.println("O nome pertence a um" + Aluno);
+        } else if (nomePesquisado.equals(funcionario1.nome)) {
+            System.out.println("O nome pertence a um " + Funcionário);
+        } else {
+            System.out.println("O nome não pertence nem a um <link>Aluno</link> nem a um <link>Funcionário</link>.");
+        }
+    }
+}

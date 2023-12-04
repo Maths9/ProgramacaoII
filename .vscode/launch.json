@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Continente",
+            "request": "launch",
+            "mainClass": "Continente",
+            "projectName": "ProgramaçãoII_f57d08fb"
+        },
+        {
+            "type": "java",
             "name": "ReflexoUsuario",
             "request": "launch",
             "mainClass": "ReflexoUsuario",
